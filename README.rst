@@ -6,8 +6,8 @@ AITools
 .. image:: https://img.shields.io/pypi/v/aitools.svg
         :target: https://pypi.python.org/pypi/aitools
 
-.. image:: https://img.shields.io/travis/imohitawasthi/aitools.svg?branch=master
-        :target: https://travis-ci.org/imohitawasthi/AITools?branch=master
+.. image:: https://img.shields.io/travis/imohitawasthi/aitools.svg
+        :target: https://travis-ci.org/imohitawasthi/aitools
 
 .. image:: https://readthedocs.org/projects/aitools/badge/?version=latest
         :target: https://aitools.readthedocs.io/en/latest/?badge=latest
