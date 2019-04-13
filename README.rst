@@ -7,7 +7,7 @@ AITools
         :target: https://pypi.python.org/pypi/aitools
 
 .. image:: https://img.shields.io/travis/imohitawasthi/aitools.svg
-        :target: https://travis-ci.org/imohitawasthi/aitools
+        :target: https://travis-ci.org/imohitawasthi/AITools
 
 .. image:: https://readthedocs.org/projects/aitools/badge/?version=latest
         :target: https://aitools.readthedocs.io/en/latest/?badge=latest
