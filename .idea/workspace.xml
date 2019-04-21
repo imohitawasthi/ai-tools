@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eda108c-93ee-4eb6-9e77-610aeb15e514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aitools/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aitools/core/n_gram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aitools/data/n_gram" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aitools/demo/n_gram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aitools/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aitools/utils/constant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aitools/utils/math.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aitools/utils/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aitools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aitools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HISTORY.rst" beforeDir="false" afterPath="$PROJECT_DIR$/HISTORY.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +41,7 @@
           <entry key="md" value="1" />
           <entry key="n_gram" value="1" />
           <entry key="not-zip-safe" value="1" />
-          <entry key="py" value="52" />
+          <entry key="py" value="53" />
           <entry key="pypirc" value="8" />
           <entry key="rst" value="24" />
           <entry key="txt" value="5" />
@@ -68,7 +53,7 @@
           <entry key="Dictionary" value="7" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="52" />
+          <entry key="Python" value="53" />
           <entry key="RNG Compact" value="1" />
           <entry key="ReST" value="24" />
           <entry key="Scratch" value="1" />
@@ -82,7 +67,7 @@
           <entry key="Python Console" value="16" />
           <entry key="gitignore" value="9" />
           <entry key="n_gram" value="1" />
-          <entry key="py" value="4834" />
+          <entry key="py" value="4835" />
           <entry key="pypirc" value="181" />
           <entry key="rst" value="1116" />
           <entry key="yml" value="1" />
@@ -92,7 +77,7 @@
         <counts>
           <entry key="Dictionary" value="175" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="4850" />
+          <entry key="Python" value="4851" />
           <entry key="RNG Compact" value="6" />
           <entry key="ReST" value="1116" />
           <entry key="YAML" value="1" />
@@ -105,6 +90,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -122,7 +116,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/contributing.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
@@ -197,6 +191,7 @@
         <option value="$PROJECT_DIR$/aitools/__init__.py" />
         <option value="$PROJECT_DIR$/README.rst" />
         <option value="$PROJECT_DIR$/HISTORY.rst" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
@@ -467,9 +462,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/lib/aitools/cli.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.pypirc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -695,9 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/conf.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -724,6 +713,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/contributing.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
