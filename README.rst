@@ -21,6 +21,7 @@ AITools
 
 
 Artificial Intelligence Tool Kit Mark Two.
+------------------------------------------
 
 
 * Free software: Apache Software License 2.0
@@ -30,7 +31,15 @@ Artificial Intelligence Tool Kit Mark Two.
 Features
 --------
 
-* TODO
+* N-GRAM - Algorithm for text generation/prediction
+
+    * Predict the next word of the sentence that further can be manipulated for predicting the entire sentence.
+    * Generation of text like a paragraph/article on Health or environment.
+    * Generation of the next GOT books.
+
+    Though it is a simple algorithm but it can be manipulated for good results easily. Which makes it very helpful.
+
+    Remarks: The outcomes currently works on simple word frequencies and use/independence of use of bayesian statistics and more nice probability models is still under progress.
 
 Credits
 -------

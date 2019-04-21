@@ -6,11 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
-.idea/
+idea/
 
 # Distribution / packaging
 .Python
 env/
+vevn/
 build/
 develop-eggs/
 dist/
