@@ -2,8 +2,9 @@
 This module mathematical functions.
 """
 
-import random
+import math
 from functools import reduce
+import numpy as np
 
 
 def vector_mean(vectors):
@@ -79,3 +80,26 @@ def dot(v, w):
     :return: Sum of products
     """
     return sum(v_i * w_i for v_i, w_i in zip(v, w))
+
+
+def mean(feature_vector):
+    """
+
+    :param feature_vector: List of integer/float/double..
+    :return: Mean of the feature vector.
+    """
+    return sum(f for f in feature_vector)/len(feature_vector)
+
+
+def standard_deviation(feature_vector):
+    """
+
+    :param feature_vector: List of integer/float/double..
+    :return: Mean of the feature vector.
+    """
+    m = mean(feature_vector)
+    return math.sqrt(sum(math.pow(f - m, 2) for f in feature_vector)/len(feature_vector))
+
+
+def sigmoid(x):
+    return 1.0 / (1.0 - np.exp(-x))

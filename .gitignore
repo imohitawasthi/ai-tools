@@ -103,3 +103,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+
+aitools/core/naive_bayes.py
+.idea

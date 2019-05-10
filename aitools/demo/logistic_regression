@@ -1,0 +1,17 @@
+
+from aitools.core import logistic_regression
+
+data_train_x = [
+    [1, 11, 111],
+    [2, 22, 222],
+    [3, 33, 333],
+    [4, 44, 444],
+    [5, 55, 555],
+]
+
+data_train_y = [0, 1, 0, 1, 0]
+
+lr = logistic_regression.LogisticRegression()
+lr.build(data_train_x, data_train_y)
+
+print(lr)
