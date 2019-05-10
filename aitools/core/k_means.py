@@ -28,8 +28,8 @@ class KMeans:
 
     def build(self, inputs):
         """
-        self.mean is populated by this function only and provides skeleton a
-        for classification.
+            self.mean is populated by this function only and provides skeleton a
+            for classification.
         :param inputs: List of Vectors
         :return: None
         """

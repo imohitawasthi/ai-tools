@@ -54,7 +54,7 @@ def minimize_batch(target_fn, gradient_fn, theta_0, tolerance=0.000001):
         next_value = target_fn(list(next_theta))
 
         # stop if we're "converging"
-        if abs(value - next_value) < tolerance or abs(value - next_value) == float('NaN'):
+        if abs(value - next_value) < tolerance:
             return theta
         else:
             theta, value = next_theta, next_value

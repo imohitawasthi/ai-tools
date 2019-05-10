@@ -102,4 +102,4 @@ def standard_deviation(feature_vector):
 
 
 def sigmoid(x):
-    return 1.0 / (1.0 - np.exp(-x))
+    return 1.0 / (1.0 + np.exp(-x))

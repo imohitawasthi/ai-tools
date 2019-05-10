@@ -1,3 +1,10 @@
+"""
+    The Logistic Regression is a statistical model in which a logistic function is user to model a binary
+    dependent variable(One of the most simplest form of Logistic function).
+
+    Here the logistic function is a sigmoid function.
+"""
+
 from functools import partial, reduce
 from aitools.utils import mathematics
 from aitools.core.utils import gradient_descent
@@ -11,6 +18,12 @@ class LogisticRegression:
         self.beta = None
 
     def build(self, independent_features, dependent_feature):
+        """
+
+        :param independent_features:
+        :param dependent_feature:
+        :return:
+        """
         base_func = partial(log_likelihood, independent_features, dependent_feature)
         gradient_func = partial(log_gradient, independent_features, dependent_feature)
 
