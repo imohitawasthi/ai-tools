@@ -14,7 +14,7 @@ data_train_y = [0, 0, 0, 1, 1]
 lr = logistic_regression.LogisticRegression()
 lr.build(data_train_x, data_train_y)
 
-print_function(lr)
+# print_function(lr)
 
 date_test_x = [
     [2104, 3, 3, 399900, 1000000],
@@ -24,4 +24,4 @@ date_test_x = [
     [30000, 6, 4, 539900, 15500000]
 ]
 
-print_function(lr.predict(date_test_x))
+# print(lr.predict(date_test_x))

@@ -4,7 +4,6 @@ This module mathematical functions.
 
 import math
 from functools import reduce
-import numpy as np
 
 
 def vector_mean(vectors):
@@ -102,4 +101,9 @@ def standard_deviation(feature_vector):
 
 
 def sigmoid(x):
-    return 1.0 / (1.0 + np.exp(-x))
+    try:
+        exp = math.exp(-x)
+    except OverflowError:
+        exp = float('inf')
+
+    return 1.0 / (1.0 + exp)
