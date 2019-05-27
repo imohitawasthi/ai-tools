@@ -1,6 +1,6 @@
 """
-K-Means algorithm is a classification unsupervised machine learning algorithm. As an input it takes K as number of
-clusters. And it requires data points on single or multiple dimensions for training.
+    K-Means algorithm is a classification unsupervised machine learning algorithm. As an input it takes K as number of
+    clusters. And it requires data points on single or multiple dimensions for training.
 """
 
 from aitools.utils import mathematics
