@@ -11,4 +11,4 @@ nb.build()
 
 speech = 'I would like to eat sandwich'
 x = nb.predict(speech)
-print(x)
+#print(x)

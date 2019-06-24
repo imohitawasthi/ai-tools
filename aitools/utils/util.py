@@ -9,6 +9,9 @@ import re
 from aitools.utils import constant
 
 
+def is_numeric(value): return isinstance(value, int) or isinstance(value, float)
+
+
 def create_random_cluster(min_range, max_range, dim, size):
     """
         Worlds most elegant cluster making function.
@@ -63,6 +66,16 @@ def split_data(data, prob):
     for row in data:
         results[0 if random.random() < prob else 1].append(row)
     return results
+
+
+def build_feature_frame(independent_features, dependent_feature):
+
+    frame = []
+    for X, y in zip(independent_features, dependent_feature):
+        X.append(y)
+        frame.append(X)
+
+    return frame
 
 # def prepare_data(file_path, label_name):
 #     df = pd.read_csv(file_path)

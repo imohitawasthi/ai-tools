@@ -69,6 +69,15 @@ Look For: Demo file logistic_regression.py
 
 Look For: Demo file naive_bayes.py
 
+* Decision Tree
+
+    * Algorithm based on Gini logic and info gain for prediction.
+    * Trees can be very use full but may lead to aver fitting easily Be Cautious.
+
+    * Next Phase - Flexibility and more control on different algorithm.
+
+Look For: Demo file decision_tree.py
+
 * Pre Processing
 
     * Utils for Pre Processing Data.
@@ -86,10 +95,13 @@ Look For: Demo file pre_processing.py
         * Entire Gradient Descent algorithm combined into one.
         * Usability Docs will be Provided Soon.
 
-* Updates
+* Next Updates
 
-    * Working on Support Vector Machines.
-        * Lot of Maths!!!
+    * Improving all algorithms and giving proper documentation on usage.
+    * Providing more user control on algorithm selection and output handling.
+    * Detailed Demo files.
+    * Sudo codes and algorithm explanations.
+    * Will be available to lower version( > 2.7).
 
 
 

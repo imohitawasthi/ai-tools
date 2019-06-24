@@ -15,6 +15,8 @@ INDEX_NEG_ONE = -1
 
 LABEL_LABEL = 'label'
 
+STRING_DECISION_TREE_GINI = 'Gini'
+
 STOPWORDS = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself",
              "yourselves", "he", "him", "his", "himself", "she", "her", "hers", "herself", "it", "its", "itself",
              "they", "them", "their", "theirs", "themselves", "what", "which", "who", "whom", "this", "that", "these",

@@ -59,3 +59,10 @@ History
     * Pre Processing
 
     * SVM in progress.
+
+
+0.1.3 (2019-06-24)
+------------------
+
+* Decision Tree Added(Gini and Impurity Method).
+* Previous algorithm improvements are in progress.
