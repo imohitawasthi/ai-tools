@@ -1,0 +1,20 @@
+id,speech,label
+1,hello world,greetings
+2,Would you like to have a sandwich?,food
+3,Having a sandwich today?,food
+4,I will eat a sandwich.,food
+5,Would you like to have lunch?,food
+6,What is on Lunch Today?,food
+7,I had a very good lunch.,food
+8,I love dogs.,animal
+9,I Want to get a Dog as a Pet.,animal
+10,I like dogs more then Cats,animal
+11,I don't like cats.,animal
+12,I will always prefer a dog over cat.,animal
+13,Cats are cute.,animal
+14,Hi,greetings
+15,Hello,greetings
+16,Morning,greetings
+17,bye,greetings
+18,goodbye,greetings
+19,goodnight,greetings

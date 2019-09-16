@@ -9,8 +9,8 @@
 """
 
 from functools import partial, reduce
-from aitools.utils import mathematics
-from aitools.core.utils import gradient_descent
+from aitools.core.mathematics import mathematics
+from aitools.core.algorithms import gradient_descent
 import math
 import random
 

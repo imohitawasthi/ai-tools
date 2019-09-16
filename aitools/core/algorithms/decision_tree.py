@@ -3,7 +3,7 @@
     the data into tree format.
 """
 
-from aitools.utils import util, constant
+from aitools.utilities import utilities, constants
 
 
 class DecisionTree:
@@ -14,7 +14,7 @@ class DecisionTree:
         self.dependent_features = dependent_features
 
     def build(self):
-        self.tree = build_tree(util.build_feature_frame(self.independent_features, self.dependent_features))
+        self.tree = build_tree(utilities.build_feature_frame(self.independent_features, self.dependent_features))
 
     def predict(self, features, tree=None):
 
@@ -67,7 +67,7 @@ class Question:
     def match(self, example):
         val = example[self.col]
         try:
-            return val >= self.val if util.is_numeric(val) else val == self.val
+            return val >= self.val if utilities.is_numeric(val) else val == self.val
         except TypeError:
             return False
 
@@ -76,7 +76,7 @@ def class_count(df):
     counts = {}
 
     for row in df:
-        label = row[constant.INDEX_NEG_ONE]
+        label = row[constants.INDEX_NEG_ONE]
         counts[label] = 1 if label not in counts else counts[label] + 1
 
     return counts

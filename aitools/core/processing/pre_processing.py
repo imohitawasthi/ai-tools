@@ -1,13 +1,13 @@
 """
     In real world we deal with a lot of raw data. And that that has to ne in a certain format, weather it is used for
-    building or predicting. Pre-Processing provides these utils for easy pre-processing of the data.
+    building or predicting. Pre-Processing provides these utilities for easy pre-processing of the data.
 
    ** Compatible with Pandas Data Frames
 """
 
 from __future__ import print_function
 
-from aitools.utils import util, constant, mathematics
+from aitools.core.mathematics import mathematics
 
 
 def get_data_frame_as_list(data_frame, label_name):

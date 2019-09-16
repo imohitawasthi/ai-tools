@@ -6,7 +6,7 @@ This module contains generic utilities.
 import random
 import re
 
-from aitools.utils import constant
+from aitools.utilities import constants
 
 
 def is_numeric(value): return isinstance(value, int) or isinstance(value, float)

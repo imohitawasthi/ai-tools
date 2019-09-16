@@ -3,7 +3,7 @@
     clusters. And it requires data points on single or multiple dimensions for training.
 """
 
-from aitools.utils import mathematics
+from aitools.core.mathematics import mathematics
 
 import matplotlib.pyplot as plt
 import random
