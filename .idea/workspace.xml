@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eda108c-93ee-4eb6-9e77-610aeb15e514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aitools/utilities/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/decision_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algorithms/decision_tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/k_means.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algorithms/k_means.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/linear_regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algorithms/logistic_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/n_gram.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algorithms/n_gram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/naive_bayes_old.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/processing/pre_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/svm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algorithms/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/utils/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algorithms/gradient_descent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/utils/word_stemmer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/data/hexagons.png" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/data/raw/hexagons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/data/n_gram" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/data/raw/n_gram" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/data/naive_bayes" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/data/raw/naive_bayes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/demo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/mathematics/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/demo/decision_tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/demo/k_means.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/demo/k_means_color_cluster.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/demo/logistic_regression" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/demo/n_gram.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/demo/naive_bayes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/demo/naive_bayes_classification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/demo/pre_procecssing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/processing/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/utils/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/utilities/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/utils/mathematics.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/mathematics/mathematics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/utils/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/utilities/utilities.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
