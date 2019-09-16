@@ -5,5 +5,3 @@
 __author__ = """Mohit Awasthi"""
 __email__ = 'imohitawasthi@gmail.com'
 __version__ = '0.1.0'
-
-from aitools.core.algorithms import n_gram
