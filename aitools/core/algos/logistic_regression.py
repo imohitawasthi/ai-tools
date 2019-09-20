@@ -10,7 +10,7 @@
 
 from functools import partial, reduce
 from aitools.core.mathematics import mathematics
-from aitools.core.algorithms import gradient_descent
+from aitools.core.algos import gradient_descent
 import math
 import random
 

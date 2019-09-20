@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eda108c-93ee-4eb6-9e77-610aeb15e514" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/aitools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aitools/core/algos/gradient_descent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aitools/core/algorithms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algos/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aitools/core/algorithms/decision_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algos/decision_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aitools/core/algorithms/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algorithms/gradient_descent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aitools/core/algorithms/k_means.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algos/k_means.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aitools/core/algorithms/logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algos/logistic_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aitools/core/algorithms/n_gram.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algos/n_gram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aitools/core/algorithms/naive_bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algos/naive_bayes.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +75,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="PLEASE_REPLACE_ME&#9;null&#9;null" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jude" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -284,7 +292,7 @@
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/aitools/core/algorithms/naive_bayes.py</url>
+          <url>file://$PROJECT_DIR$/aitools/core/algos/naive_bayes.py</url>
           <line>134</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
