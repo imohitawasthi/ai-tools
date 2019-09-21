@@ -20,6 +20,14 @@
 
 """
 
+"""
+    
+    Notes V1:
+
+        I will try to move forward with more of a generic and a "final product" approach. What ever will come out will be
+        the final output of this version
+"""
+
 
 class GradientDescent:
 
