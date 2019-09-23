@@ -105,5 +105,7 @@ ENV/
 .mypy_cache/
 
 .idea
+.idea/*
+.idea/workspace.xml
 
 test.py
