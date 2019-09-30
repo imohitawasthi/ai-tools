@@ -76,7 +76,7 @@ class GradientDescent:
 
         """
            The Constructor
-        :param target: the cost function
+        :param cost: the cost function
         :param gradient: the derivative of the cost function
         :param independent: independent variables (X)
         :param dependent: dependent variable (y)
@@ -91,10 +91,17 @@ class GradientDescent:
             step_sizes = STEP_SIZES
 
         # Data Set (X, y)
+            # Based on "iteration" this will change.
         self.dependent = dependent
         self.independent = independent
 
         # Cost and gradient functions
+
+        """
+            For implementing different iterations here things needs to be changed. 
+            This has to be totally calculated on the while loop as in case of different
+            algorithms the data-set changes or remains the same.  
+        """
         self.cost = partial(cost, self.independent, self.dependent)
         self.gradient = partial(gradient, self.independent, self.dependent)
 
@@ -117,7 +124,12 @@ class GradientDescent:
         theta = get_theta_zero(self.independent)
         value = cost(theta)
 
+        """
+            This has to be a different function as to implement "different ways of approaching
+            the decent".              
+        """
         while True:
+            # Based on variant this will change
             gradient = self.gradient(theta)
             next_thetas = [
                 step(theta, gradient, -step_size) for step_size in self.step_sizes
