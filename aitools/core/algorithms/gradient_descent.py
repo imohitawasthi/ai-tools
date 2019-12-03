@@ -54,13 +54,28 @@ from functools import partial
 
 # Constants
 
+ITERATION_STOCHASTIC = 'STOCHASTIC'
+ITERATION_BATCH = 'BATCH'
+ITERATION_MIN_BATCH = 'MIN-BATCH'
+
+VARIATION_VANILLA = 'VANILLA'
+VARIATION_MOMENTUM = 'MOMENTUM'
+VARIATION_ADAGRAD = 'ADAGRAD'
+VARIATION_ADAM = 'ADAM'
+
 TOLERANCE = 0.000001
 STEP_SIZES = [100, 10, 1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
-ITERATION = 'STOCHASTIC'
+ITERATION = ITERATION_STOCHASTIC
 VARIANT = 'VANILLA'
 
 
 class GradientDescent:
+
+    iterations = {
+        ITERATION_STOCHASTIC: lambda dependent, independent: get_stochastic_frame(dependent, independent),
+        ITERATION_BATCH: lambda dependent, independent: get_batch_frame(dependent, independent),
+        ITERATION_MIN_BATCH: lambda dependent, independent: get_min_batch_frame(dependent, independent)
+    }
 
     def __init__(
         self,
@@ -71,7 +86,9 @@ class GradientDescent:
         step_sizes=None,
         tolerance=TOLERANCE,
         iteration=ITERATION,
-        variant=VARIANT
+        variant=VARIANT,
+        epoch=None,
+        batch_size=None
     ):
 
         """
@@ -102,8 +119,11 @@ class GradientDescent:
             This has to be totally calculated on the while loop as in case of different
             algorithms the data-set changes or remains the same.  
         """
-        self.cost = partial(cost, self.independent, self.dependent)
-        self.gradient = partial(gradient, self.independent, self.dependent)
+        # self.cost = partial(cost, self.independent, self.dependent)
+        # self.gradient = partial(gradient, self.independent, self.dependent)
+
+        self.cost = cost
+        self.gradient = gradient
 
         # Metadata
         self.step_sizes = step_sizes
@@ -112,38 +132,25 @@ class GradientDescent:
         self.variant = variant
 
     def run(self):
-        """
+        # dependent, independent = self.iterations[self.iteration]()
+        variants = {
+            VARIATION_VANILLA: lambda: self.vanilla(),
+            VARIATION_MOMENTUM: lambda: self.momentum(),
+            VARIATION_ADAGRAD: lambda: self.adagrad(),
+            VARIATION_ADAM: lambda: self.adam()
+        }
 
-        :return:
-        """
+    def vanilla(self):
+        pass
 
-        # Safe version of cost function
-        cost = safe(self.cost)
+    def momentum(self):
+        pass
 
-        # minimizing
-        theta = get_theta_zero(self.independent)
-        value = cost(theta)
+    def adagrad(self):
+        pass
 
-        """
-            This has to be a different function as to implement "different ways of approaching
-            the decent".              
-        """
-        while True:
-            # Based on variant this will change
-            gradient = self.gradient(theta)
-            next_thetas = [
-                step(theta, gradient, -step_size) for step_size in self.step_sizes
-            ]
-
-            # choose the one that minimizes the error function
-            next_theta = min(next_thetas, key=cost)
-            next_value = cost(list(next_theta))
-
-            # stop if we're "converging"
-            if abs(value - next_value) < self.tolerance:
-                return theta
-            else:
-                theta, value = next_theta, next_value
+    def adam(self):
+        pass
 
 
 def get_theta_zero(independent):
@@ -178,3 +185,50 @@ def step(theta, direction, step_size):
     :return: next thetas
     """
     return [theta_i + step_size * direction_i for theta_i, direction_i in zip(theta, direction)]
+
+
+def get_stochastic_frame(dependent, independent):
+    return dependent, independent
+
+
+def get_batch_frame(dependent, independent):
+    return dependent, independent
+
+
+def get_min_batch_frame(dependent, independent):
+    return dependent, independent
+
+
+# def run(self):
+    #     """
+    #
+    #     :return:
+    #     """
+    #
+    #     # Safe version of cost function
+    #     cost = safe(self.cost)
+    #
+    #     # minimizing
+    #     theta = get_theta_zero(self.independent)
+    #     value = cost(theta)
+    #
+    #     """
+    #         This has to be a different function as to implement "different ways of approaching
+    #         the decent".
+    #     """
+    #     while True:
+    #         # Based on variant this will change
+    #         gradient = self.gradient(theta)
+    #         next_thetas = [
+    #             step(theta, gradient, -step_size) for step_size in self.step_sizes
+    #         ]
+    #
+    #         # choose the one that minimizes the error function
+    #         next_theta = min(next_thetas, key=cost)
+    #         next_value = cost(list(next_theta))
+    #
+    #         # stop if we're "converging"
+    #         if abs(value - next_value) < self.tolerance:
+    #             return theta
+    #         else:
+    #             theta, value = next_theta, next_value

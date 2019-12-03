@@ -109,3 +109,4 @@ ENV/
 .idea/workspace.xml
 
 test.py
+.\.idea

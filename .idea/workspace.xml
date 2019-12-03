@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eda108c-93ee-4eb6-9e77-610aeb15e514" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aitools/core/algorithms/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algorithms/gradient_descent.py" afterDir="false" />
     </list>
@@ -68,7 +69,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="PLEASE_REPLACE_ME&#9;null&#9;null" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/HEALTHSETGO/HSG_Platform_Upgrade/hsg_platform/hsg-cron-services/src/app" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
