@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eda108c-93ee-4eb6-9e77-610aeb15e514" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aitools/core/gradient_descent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aitools/directories" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aitools/core/algorithms/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/algorithms/gradient_descent.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,27 +49,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QelBMmUwAFSS3JkeQ0Lbdeo78o" />
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State />
-          <State>
-            <id>Python</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>PyCompatibilityInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="PLEASE_REPLACE_ME&#9;null&#9;null" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="D:/HEALTHSETGO/HSG_Platform_Upgrade/hsg_platform/hsg-cron-services/src/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/aitools/core" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -81,15 +64,16 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\HOME\aitools\aitools\data" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\HOME\AI\aitools\aitools\core\algorithms" />
       <recent name="D:\HOME\AI\aitools\aitools\core\processing" />
       <recent name="D:\HOME\AI\aitools\aitools\core\mathematics" />
       <recent name="D:\HOME\AI\aitools\aitools\core" />
       <recent name="D:\HOME\AI\aitools\aitools\data\raw" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\HOME\AI\aitools\aitools\core" />
+      <recent name="D:\HOME\aitools\aitools\data" />
     </key>
   </component>
   <component name="RunDashboard">
