@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eda108c-93ee-4eb6-9e77-610aeb15e514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aitools/core/gradient_descent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aitools/directories" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aitools/core/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/aitools/core/gradient_descent.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,32 +17,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>PLEASE_REPLACE_ME</find>
-      <find>csv</find>
-      <find>parse</find>
-      <find>__all__</find>
-      <find>prob[x] = probables.count(x)</find>
-      <find>grams_probabilities</find>
-      <find>gram_probabilities</find>
-      <find>generate_text_using_n_gram</find>
-      <find>WordStemmer</find>
-      <find>classify_naive_bayes</find>
-      <find>log_partial_ij</find>
-      <find>log_gradient_i</find>
-      <find>safe</find>
-      <find>minimize_batch</find>
-      <find>log_likelihood_i</find>
-      <find>negate</find>
-      <find>log_likelihood</find>
-      <find>step</find>
-      <find>theta</find>
-    </findStrings>
-    <dirStrings>
-      <dir>D:\HOME\aitools</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

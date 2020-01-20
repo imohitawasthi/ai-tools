@@ -77,7 +77,8 @@ iterations = {
 }
 
 variants = {
-    VARIATION_VANILLA: lambda: vanilla(),
+    VARIATION_VANILLA:
+        lambda gradient, learning_rate, independent, epoch: vanilla(gradient, learning_rate, independent, epoch),
     VARIATION_MOMENTUM: lambda: momentum(),
     VARIATION_ADAGRAD: lambda: adagrad(),
     VARIATION_ADAM: lambda: adam()
@@ -160,10 +161,13 @@ def get_min_batch_frame(dependent, independent):
 
 
 # Variant functions
-def vanilla(cost, gradient):
+def vanilla(gradient, learning_rate, independent, epoch):
+    theta = get_theta_zero(independent)
 
+    for _ in range(epoch):
+        theta = theta - (learning_rate * gradient(theta))
 
-    pass
+    return theta
 
 
 def momentum():
