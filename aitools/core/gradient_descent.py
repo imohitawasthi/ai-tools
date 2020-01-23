@@ -176,12 +176,12 @@ def momentum(gradient, alpha, independent, epoch):
     # Common default value
     beta = 0.9
 
-    def update_velocity(vel):
-        return (vel * beta) + ((1 - beta) * gradient)
+    def update_velocity(velocity_1, theta_1):
+        return (velocity_1 * beta) + ((1 - beta) * gradient(theta_1))
 
     theta = get_theta_zero(independent)
     for _ in range(epoch):
-        velocity = update_velocity(velocity)
+        velocity = update_velocity(velocity, theta)
         theta = theta - (alpha * velocity)
 
     return theta
