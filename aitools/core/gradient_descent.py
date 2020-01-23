@@ -161,17 +161,30 @@ def get_min_batch_frame(dependent, independent):
 
 
 # Variant functions
-def vanilla(gradient, learning_rate, independent, epoch):
+def vanilla(gradient, alpha, independent, epoch):
     theta = get_theta_zero(independent)
 
     for _ in range(epoch):
-        theta = theta - (learning_rate * gradient(theta))
+        theta = theta - (alpha * gradient(theta))
 
     return theta
 
 
-def momentum():
-    pass
+def momentum(gradient, alpha, independent, epoch):
+    # Initial value for velocity
+    velocity = 0
+    # Common default value
+    beta = 0.9
+
+    def update_velocity(vel):
+        return (vel * beta) + ((1 - beta) * gradient)
+
+    theta = get_theta_zero(independent)
+    for _ in range(epoch):
+        velocity = update_velocity(velocity)
+        theta = theta - (alpha * velocity)
+
+    return theta
 
 
 def adagrad():
