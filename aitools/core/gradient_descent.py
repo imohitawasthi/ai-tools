@@ -187,8 +187,20 @@ def momentum(gradient, alpha, independent, epoch):
     return theta
 
 
-def adagrad():
-    pass
+def adagrad(gradient, alpha, independent, epoch):
+
+    cum_sum = 0
+    epsilon = 10**-7
+
+    theta = get_theta_zero(independent)
+
+    def cum_sum_of_squared_gradient(theta_1):
+        return cum_sum + gradient(theta_1) ** 2
+
+    for _ in range(epoch):
+        theta = theta - ((alpha/(cum_sum_of_squared_gradient(theta) * epsilon)) * gradient(theta))
+
+    return theta
 
 
 def adam():
