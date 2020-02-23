@@ -203,9 +203,35 @@ def adagrad(gradient, alpha, independent, epoch):
     return theta
 
 
-def adam():
-    pass
+def adam(gradient, alpha, independent, epoch):
 
+    beta_1 = 0.9
+    beta_2 = 0.999
+    epsilon = 10**-8
+
+    velocity = 0
+    cum_sum = 0
+
+    theta = get_theta_zero(independent)
+
+    def updated_cum_sum(cum_sum_1, theta_1):
+        return (beta_2 * cum_sum_1) + ((1 - beta_2) * gradient(theta_1))
+
+    def updated_velocity(velocity_1, theta_1):
+        return (beta_1 * velocity_1) + ((1 - beta_1) * gradient(theta_1))
+
+    def average(variable, constant):
+        return variable/(1 - constant)
+
+    for _ in range(epoch):
+        theta = theta - \
+                (
+                    (alpha / (
+                        average(updated_cum_sum(cum_sum, theta), beta_2) + epsilon
+                    )) * average(updated_velocity(velocity, theta), beta_1)
+                )
+
+    return theta
 
 # Helpers
 def get_theta_zero(independent):
