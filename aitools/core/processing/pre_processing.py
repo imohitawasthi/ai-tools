@@ -7,7 +7,7 @@
 
 from __future__ import print_function
 
-from aitools.core.mathematics import mathematics
+from aitools.mathematics import mathematics
 
 
 def get_data_frame_as_list(data_frame, label_name):

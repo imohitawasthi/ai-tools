@@ -108,5 +108,5 @@ ENV/
 .idea/*
 .idea/workspace.xml
 
-test.py
+tests/test_logistic_regression.py
 .\.idea

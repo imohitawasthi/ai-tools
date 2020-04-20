@@ -79,9 +79,12 @@ iterations = {
 variants = {
     VARIATION_VANILLA:
         lambda gradient, learning_rate, independent, epoch: vanilla(gradient, learning_rate, independent, epoch),
-    VARIATION_MOMENTUM: lambda: momentum(),
-    VARIATION_ADAGRAD: lambda: adagrad(),
-    VARIATION_ADAM: lambda: adam()
+    VARIATION_MOMENTUM:
+        lambda gradient, learning_rate, independent, epoch: momentum(gradient, learning_rate, independent, epoch),
+    VARIATION_ADAGRAD:
+        lambda gradient, learning_rate, independent, epoch: adagrad(gradient, learning_rate, independent, epoch),
+    VARIATION_ADAM:
+        lambda gradient, learning_rate, independent, epoch: adam(gradient, learning_rate, independent, epoch)
 }
 
 
@@ -143,6 +146,8 @@ class GradientDescent:
 
     def run(self):
         # dependent, independent = self.iterations[self.iteration]()
+
+        variants[self.variant](self.gradient, 0.01, self.independent, 1000)
         pass
 
 
@@ -232,6 +237,7 @@ def adam(gradient, alpha, independent, epoch):
                 )
 
     return theta
+
 
 # Helpers
 def get_theta_zero(independent):
