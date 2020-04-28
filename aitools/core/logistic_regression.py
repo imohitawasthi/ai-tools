@@ -41,6 +41,8 @@ class LogisticRegression:
         gd = gradient_descent.GradientDescent(
             self.cost, self.gradient, self.independent_variable, self.dependent_variable
         )
+
+        gd.run()
         pass
 
 
